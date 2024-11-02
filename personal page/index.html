@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+    </header>
+    
+    <section class="picture">
+        <h2>黃金獵犬照片</h2>
+        <button id="toggle-pictures">顯示/隱藏 照片</button>
+        <img class="profile-pic" src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img class="profile-pic" src="https://images.pexels.com/photos/1001976/pexels-photo-1001976.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </section>
+
+    <section class="personality">
+        <h2>性格</h2>
+        <ul>
+            <li><a href="#">活潑</a></li>
+            <li><a href="#">有耐心</a></li>
+            <li><a href="#">溫和</a></li>
+            <li><a href="#">穩重</a></li>
+        </ul>
+    </section>
+
+    <section class="like">
+        <h2>喜歡</h2>
+        <ul>
+            <li><a href="#">游泳</a></li>
+            <li><a href="#">接物品</a></li>
+        </ul>
+    </section>
+
+    <section class="body-language">
+        <h2>身體語言</h2>
+        <ul>
+            <li><a href="#">平常 : 隨意坐立、尾巴輕微擺動</a></li>
+            <li><a href="#">開心 : 大力擺動尾巴</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy;My Personal Page</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // 點擊顯示或隱藏圖片
+            $("#toggle-pictures").click(function() {
+                $(".profile-pic").toggle();
+            });
+
+            // 點擊標題時滑動顯示或隱藏對應的內容
+            $("h2").click(function() {
+                $(this).next("ul, .profile-pic").slideToggle();
+            });
+
+            // 滑鼠移入和移出時改變連結顏色
+            $("a").hover(
+                function() {
+                    $(this).css("color", "yellow");
+                },
+                function() {
+                    $(this).css("color", "black");
+                }
+            );
+        });
+    </script>
+</body>
+</html>

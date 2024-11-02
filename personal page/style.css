@@ -1,0 +1,73 @@
+/* 全局樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 頁首樣式 */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* 標題樣式 */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* 各節樣式 */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 項目清單樣式 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 連結樣式 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* 頁尾樣式 */
+footer {
+    text-align: center;
+    padding: 1px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 0%; /* 圓形圖片 */
+    display: block;
+    margin: 20px auto; /* 讓圖片置中 */
+}
